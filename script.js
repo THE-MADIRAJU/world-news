@@ -4,6 +4,9 @@ async function getNews() {
   const country = document.getElementById("country").value;
   const category = document.getElementById("category").value;
   const query = document.getElementById("searchInput").value;
+  document.getElementById("loader").style.display = "block";
+document.getElementById("loader").style.display = "none";
+
 
 const url = `https://api.worldnewsapi.com/search-news?text=${query || "world"}&source-countries=${country}&categories=${category}&api-key=${API_KEY}`;
 
