@@ -19,16 +19,12 @@ function displayNews(news) {
   const container = document.getElementById("news-container");
   container.innerHTML = "";
 
-  if (!news || news.length === 0) {
-    container.innerHTML = "<p>No news found.</p>";
-    return;
-  }
-
   news.forEach(article => {
     const div = document.createElement("div");
     div.className = "news-card";
 
     div.innerHTML = `
+      ${article.image ? `<img src="${article.image}" />` : ""}
       <h3>${article.title}</h3>
       <p>${article.text.slice(0, 120)}...</p>
       <a href="${article.url}" target="_blank">Read more</a>
