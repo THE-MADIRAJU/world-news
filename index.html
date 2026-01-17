@@ -7,26 +7,31 @@
 </head>
 <body>
 
-  <header>
-    <h1>🌍 World News</h1>
+  <header class="top-bar">
+  <h1>🌍 World News</h1>
 
-    <select id="country">
-      <option value="us">USA</option>
-      <option value="in">India</option>
-      <option value="gb">UK</option>
-    </select>
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Search news..." 
+  />
 
-    <select id="category">
-   <option value="politics">Politics</option>
-   <option value="business">Business</option>
-   <option value="technology">Technology</option>
-   <option value="sports">Sports</option>
-   <option value="health">Health</option>
-   </select>
+  <select id="country">
+    <option value="us">USA</option>
+    <option value="in">India</option>
+    <option value="gb">UK</option>
+  </select>
 
+  <select id="category">
+    <option value="politics">Politics</option>
+    <option value="business">Business</option>
+    <option value="technology">Technology</option>
+    <option value="sports">Sports</option>
+  </select>
 
-    <button onclick="getNews()">Fetch News</button>
-  </header>
+  <button onclick="getNews()">Search</button>
+</header>
+
 
   <main id="news-container"></main>
 
