@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+header h1 {
+  margin-right: auto;
+}
+
+button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#news-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.news-card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.news-card h3 {
+  margin-top: 0;
+}
