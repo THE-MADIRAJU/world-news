@@ -3,6 +3,10 @@ const API_KEY = "4d11ef7a5add4fcea7d306adb7d6b19c";
 async function getNews() {
   const country = document.getElementById("country").value;
   const category = document.getElementById("category").value;
+  const query = document.getElementById("searchInput").value;
+
+const url = `https://api.worldnewsapi.com/search-news?text=${query || "world"}&source-countries=${country}&categories=${category}&api-key=${API_KEY}`;
+
 
   const url = `https://api.worldnewsapi.com/search-news?source-countries=${country}&categories=${category}&api-key=${API_KEY}`;
 
